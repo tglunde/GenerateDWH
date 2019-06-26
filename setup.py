@@ -12,7 +12,7 @@ with open(os.path.join(this_directory, 'README.md')) as f:
 
 package_name = "dwhgen"
 package_version = "0.0.1"
-description = """With dwhgen users can generate relational dwh including ddl, dml, scheduling and business rule models using DataVault, Airflow and  DBT"""
+description = """With dwhgen users can generate relational dwh including ddl, dml, scheduling and business rule models using DataVault, Airflow and DBT"""
 
 
 setup(

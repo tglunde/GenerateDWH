@@ -18,6 +18,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        dwhgen=dwhgen.main:main
+        dwhgen=main:main
     ''',
 )
