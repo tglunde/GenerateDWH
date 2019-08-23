@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: 21C  
-    schema: SBK_DWH_PUBLIC
+  - name: 21C
+    schema: DWH_PUBLIC
     tables:
       - name: N_LEI_LE_ANSPRECHPARTNER
       - name: N_LEI_ARZT_FACHGEBIET
