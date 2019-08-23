@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="sqlite_jdbc-16c9aee7137-38bdbb25cae91acd" provider="generic" driver="sqlite_jdbc" name="SQLite - metadata.db" save-password="true" read-only="false">
+		<connection server="" database="D:\project\generatedwh\metadata\metadata.db" url="jdbc:sqlite:D:\project\generatedwh\metadata\metadata.db" type="dev"/>
+	</data-source>
+	<filters/>
+</data-sources>

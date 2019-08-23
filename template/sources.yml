@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: 21C  
+    schema: SBK_DWH_PUBLIC
+    tables:
+      - name: N_LEI_LE_ANSPRECHPARTNER
+      - name: N_LEI_ARZT_FACHGEBIET
+      - name: R_LEI_LEISTUNGSERBRINGER_STAMMDATEN_APOTHEKEN
+      - name: N_LEI_ARZ_INFO_VERORDNUNG
+      - name: N_LEI_ARZ_MITTEL
+      - name: N_LEI_ARZ_RECHNUNG_ECKDATEN
+      - name: R_VERSICHERTE_STAMMDATEN_MONAT_STATISCH_21C
+      - name: R_PRT_VERSICHERTE_STAMMDATEN
+      - name: N_LEI_ARZ_ARZNEIMITTEL_STAMMDATEN
