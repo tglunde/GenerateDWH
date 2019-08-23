@@ -4,13 +4,13 @@ WITH mappings AS (
 	SELECT * FROM mapping
 ), attributes AS (
 	SELECT
-	    name, typ, REPLACE(pfad, 'BI Modell::Gesch‰ftsobjektmodell::Gesch‰ftsobjekte::', '') AS entity
+	    name, typ, REPLACE(pfad, 'BI Modell::Gesch√§ftsobjektmodell::Gesch√§ftsobjekte::', '') AS entity
 	FROM
     	mappings
 	WHERE
-    	typ IN ('Entit‰tsattribut','Business Key')
+    	typ IN ('Entit√§tsattribut','Business Key')
 ), cbc AS (
-	SELECT name FROM mappings WHERE typ = 'Gesch‰ftsobjekt'
+	SELECT name FROM mappings WHERE typ = 'Gesch√§ftsobjekt'
 ), nbr AS (
 	SELECT name FROM mappings WHERE typ = 'Ereignis'
 ), maps AS (
@@ -36,11 +36,11 @@ WITH mappings AS (
 			(
 				SELECT
 				    REPLACE(name, 'conceptionalCopy@', '') AS mapfrom,
-				    REPLACE(pfad, 'BI Modell::Gesch‰ftsobjektmodell::Gesch‰ftsobjekte::', '') AS mapto
+				    REPLACE(pfad, 'BI Modell::Gesch√§ftsobjektmodell::Gesch√§ftsobjekte::', '') AS mapto
 				FROM
 				    mappings
 				WHERE
-				    typ = '<<conceptionalCopy>> Abh‰ngigkeit'
+				    typ = '<<conceptionalCopy>> Abh√§ngigkeit'
 			)
 		)
 	)
@@ -70,7 +70,7 @@ WITH mappings AS (
 	FROM
 	    mappings
 	WHERE
-	    typ = 'Entit‰tsbeziehung'
+	    typ = 'Entit√§tsbeziehung'
 )
 
 SELECT * FROM rels;
