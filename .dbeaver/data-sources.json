@@ -1,0 +1,27 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-16c9aee7137-38bdbb25cae91acd": {
+			"provider": "generic",
+			"driver": "sqlite_jdbc",
+			"name": "SQLite - metadata.db",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "D:\\project\\generatedwh\\metadata\\metadata.db",
+				"url": "jdbc:sqlite:D:\\project\\generatedwh\\metadata\\metadata.db",
+				"type": "dev"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}

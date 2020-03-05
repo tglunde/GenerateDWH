@@ -3,14 +3,30 @@ from typing import Optional, Set, List, Dict
 
 
 @dataclass(unsafe_hash=True, eq=True)
-class Interface:
+class Source:
     name: str
+    connection: str
 
 
 @dataclass(unsafe_hash=True, eq=True)
 class Column:
     name: str
-    type: Optional[str]
+    no: int
+    typename: str
+    length: int
+    scale: int
+    remark: str
+
+
+@dataclass(unsafe_hash=True, eq=True)
+class Interface:
+    name: str
+    catalog: str
+    schema: str
+    remark: str
+    limit: str
+    source: Source
+    columns: Optional[Set[Column]]
 
 
 @dataclass(unsafe_hash=True, eq=True)
@@ -28,7 +44,7 @@ class AttributeMap:
 
 @dataclass(unsafe_hash=True, eq=True)
 class CBC(object):
-    """ Core Business Concept - business objects for the target model as defined by the business"""
+    """ Core Business Concept - object for the target model as defined by the business"""
     name: str
     bk: Attribute
     attributes: Optional[Dict[str, Attribute]]
@@ -47,7 +63,7 @@ class NBR(object):
 
 
 @dataclass
-class Satellit:
+class Satellite:
     name: str
     hk: Column
     cols: List[Column]
@@ -65,5 +81,5 @@ class Hub:
     tabname: str
     hk: Column
     bk: Column
-    sats: List[Satellit]
+    sats: List[Satellite]
     links: List[Link]

@@ -4,6 +4,7 @@ import os
 import shutil
 from dwhgen.vault import *
 from dwhgen.supernova import *
+from dwhgen.metadata import *
 
 import argparse
 
@@ -29,6 +30,8 @@ def cli():
     if args.cmd == 'supernova':
         supernova(args.dsn, args.user, args.password, args.out, args.tmpl)
 
+    if args.cmd == 'metadata':
+        metadata(args.tmpl)
 
 if __name__ == '__main__':
     cli()

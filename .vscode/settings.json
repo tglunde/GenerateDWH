@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "D:\\project\\env\\Scripts\\python.exe",
-    "python.linting.pep8Enabled": true
+    "python.pythonPath": "C:\\Users\\Torsten.Glunde\\.virtualenvs\\project-E59yepnC\\Scripts\\python.exe",
+    "python.linting.pycodestyleEnabled": true
 }

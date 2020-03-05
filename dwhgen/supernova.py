@@ -38,7 +38,7 @@ def supernova(dsn=None, user=None, password=None, outputpath=None, templatepath=
             hub.links.append(links[tab_name])
         if v_type == 'S':
             if tab_name not in sats:
-                sats[tab_name] = Satellit(tab_name, None, list())
+                sats[tab_name] = Satellite(tab_name, None, list())
                 hub.sats.append(sats[tab_name])
             if col.name.endswith('HK'):
                 sats[tab_name].hk = col

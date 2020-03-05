@@ -31,6 +31,6 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'dwhgen = dwh.main:cli',
+            'dwhgen = dwhgen.main:cli',
         ]}
 )
